@@ -2,11 +2,23 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Bienvenido a <%= title %></p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Logo_EITE_de_la_ULPGC.png/900px-Logo_EITE_de_la_ULPGC.png"
+    <button id="Accede a EITE">Ir a otra página</button>
+
+    <script>
+      // Añade un evento de clic al botón para redirigir a la página específica
+      document
+        .getElementById("irAOtraPagina")
+        .addEventListener("click", function () {
+          window.location.href = "https://eite.ulpgc.es/index.php/es/";
+        });
+    </script>
+
+    <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Logo_EITE_de_la_ULPGC.png/900px-Logo_EITE_de_la_ULPGC.png"
   </body>
 </html>
